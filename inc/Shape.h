@@ -21,7 +21,7 @@ namespace Mitrais
 			Shape();
 			virtual ~Shape();
 			void printArea();
-		private:
+		protected:
 			virtual double getArea() = 0;
 			virtual std::string getType();
 	};
