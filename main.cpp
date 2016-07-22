@@ -4,7 +4,7 @@
 * Version     :
 * Copyright   :
 * Description : Implementation of Non Virtual Interface Pattern in C++.
-* 				This project created for C++ Bootcamp Training in Mitrais.
+* This project created for C++ Bootcamp Training in Mitrais.
 ==============================================================================*/
 
 #include <iostream>
@@ -14,6 +14,7 @@
 
 using namespace std;
 using namespace Mitrais;
+
 int main(int argc, char* argv[])
 {
 	// Square

@@ -13,15 +13,47 @@
 using namespace std;
 namespace Mitrais
 {
+	/**
+	 * The Triangle class, this class is derived form Shape class
+	 */
 	class Triangle : public Shape
 	{
 		public:
+			/**
+			 * The default constructor
+			 * @param width: The triangle width
+			 * @param height: The triangle height
+			 */
 			Triangle(double width, double height);
+
+			/**
+			 * The default destructor
+			 */
 			~Triangle();
 
 		private:
-			double _width, _height;
+			/**
+			 * The triangle width
+			 */
+			double _width;
+
+			/**
+			 * The triangle height
+			 */
+			double _height;
+
+			/**
+			 * The function to get the type of the shape.
+			 * This method override the getType method from the Shape class
+			 * @return The type of shape
+			 */
 			std::string getType();
+
+			/**
+			 * The method to calculate the triangle area.
+			 * This method override the getArea method from the Shape class
+			 * @return The triangle area
+			 */
 			double getArea();
 	};
 }

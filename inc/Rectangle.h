@@ -14,13 +14,41 @@ using namespace std;
 
 namespace Mitrais
 {
+	/**
+	 * The rectangle class, this class is derived form Shape class
+	 */
 	class Rectangle : public Shape
 	{
 		public:
+
+			/**
+			 * Default constructor
+			 * @param width: The rectangle width
+			 * @param height: The rectangle height
+			 */
 			Rectangle(double width, double height);
+
+			/**
+			 * Default destructor
+			 */
 			~Rectangle();
+
 		private:
-			double _width, _height;
+			/**
+			 * The rectangle width
+			 */
+			double _width;
+
+			/**
+			 * The rectangle height
+			 */
+			double _height;
+
+			/**
+			 * The method to calculate the rectangle area.
+			 * This method override the getArea method from the Shape class
+			 * @return The rectangle area
+			 */
 			double getArea();
 	};
 }
